@@ -1,0 +1,14 @@
+To create cluster in AKS
+==========================
+
+eksctl create cluster --name mycluster --version 1.23 --node-type t3.large --nodes 3 --region=us-east-1
+
+To delete Cluster
+=================
+
+eksctl delete cluster --name cluster1
+
+eksctl delete nodegroup \
+  --cluster cluster \
+  --region us-east-1 \
+  --name ng-a9d89ec
